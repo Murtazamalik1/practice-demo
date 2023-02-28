@@ -5,16 +5,20 @@ import java.util.Scanner;
 //Leap Year
 public class    BasicCoreProblem {
     public static void main(String[] args) {
-        int year;
+        double n;
+        double sum = 0;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("enter any year to check its leap year or not");
-        year = scanner.nextInt();
+        System.out.println("Enter Harmonic Number");
+        n = scanner.nextInt();
 
-        if (year %2 == 0 && year%4 == 0 && year%100 != 0 || year%400 == 0 ){
-            System.out.println(" Leap Year :" + year);
+        if (n > 0) {
+            for (double i = 0; i <= n; i++) {
+                sum = n + (1 / i);
+            }
+            System.out.println(sum);
         }
         else {
-            System.out.println("Not Leap Year :" + year );
+            System.out.println("enter  the positive number");
         }
     }
 }
