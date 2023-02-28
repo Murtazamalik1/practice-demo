@@ -2,7 +2,7 @@ package day5;
 
 import java.util.Scanner;
 
-//Leap Year
+//Harmonic Number
 public class    BasicCoreProblem {
     public static void main(String[] args) {
         double n;
